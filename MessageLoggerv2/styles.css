@@ -1,0 +1,430 @@
+/* Message Logger v2 Styles */
+
+.messagelogger-modal {
+    --messagelogger-primary: var(--brand-500);
+    --messagelogger-secondary: var(--background-secondary);
+    --messagelogger-accent: var(--background-modifier-accent);
+    --messagelogger-hover: var(--background-modifier-hover);
+}
+
+.messagelogger-search-container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+.messagelogger-search-input {
+    flex-grow: 1;
+    min-width: 200px;
+}
+
+.messagelogger-stats {
+    color: var(--text-muted);
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.messagelogger-actions {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.messagelogger-content {
+    flex-grow: 1;
+    overflow: hidden;
+    border: 1px solid var(--messagelogger-accent);
+    border-radius: 8px;
+    background: var(--background-primary);
+}
+
+.messagelogger-empty {
+    padding: 40px 20px;
+    text-align: center;
+    color: var(--text-muted);
+}
+
+.messagelogger-loading {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.messagelogger-list {
+    height: 100%;
+    overflow-y: auto;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.messagelogger-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.messagelogger-list::-webkit-scrollbar-track {
+    background: var(--scrollbar-auto-track);
+}
+
+.messagelogger-list::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-auto-thumb);
+    border-radius: 4px;
+}
+
+.messagelogger-list::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-auto-thumb-hover);
+}
+
+.messagelogger-message {
+    padding: 12px;
+    background: var(--background-primary);
+    border-radius: 8px;
+    border: 1px solid var(--messagelogger-accent);
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.messagelogger-message:hover {
+    border-color: var(--messagelogger-primary);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.messagelogger-message-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.messagelogger-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.messagelogger-message-content {
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.messagelogger-author-info {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.messagelogger-author-name {
+    font-weight: 600;
+    color: var(--header-primary);
+}
+
+.messagelogger-timestamp {
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+.messagelogger-edited {
+    font-size: 10px;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.messagelogger-text {
+    word-break: break-word;
+    white-space: pre-wrap;
+    line-height: 1.375;
+    color: var(--text-normal);
+}
+
+.messagelogger-attachments {
+    margin-top: 8px;
+}
+
+.messagelogger-attachment {
+    margin-bottom: 4px;
+}
+
+.messagelogger-image {
+    max-width: 300px;
+    max-height: 200px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.messagelogger-image:hover {
+    transform: scale(1.02);
+}
+
+.messagelogger-file {
+    padding: 8px 12px;
+    background: var(--messagelogger-secondary);
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    border: 1px solid var(--messagelogger-accent);
+}
+
+.messagelogger-file:hover {
+    background: var(--messagelogger-hover);
+}
+
+.messagelogger-file-icon {
+    font-size: 14px;
+}
+
+.messagelogger-file-info {
+    font-size: 12px;
+    color: var(--text-normal);
+}
+
+.messagelogger-stickers {
+    margin-top: 8px;
+}
+
+.messagelogger-sticker {
+    margin-bottom: 4px;
+}
+
+.messagelogger-sticker-image {
+    max-width: 160px;
+    max-height: 160px;
+    border-radius: 4px;
+}
+
+.messagelogger-sticker-name {
+    font-size: 10px;
+    color: var(--text-muted);
+    margin-top: 2px;
+}
+
+.messagelogger-embeds {
+    margin-top: 8px;
+}
+
+.messagelogger-embed {
+    border-left: 4px solid var(--messagelogger-primary);
+    background: var(--messagelogger-secondary);
+    padding: 8px 12px;
+    border-radius: 0 4px 4px 0;
+    margin-bottom: 8px;
+}
+
+.messagelogger-embed-title {
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: var(--header-primary);
+}
+
+.messagelogger-embed-title a {
+    color: var(--text-link);
+    text-decoration: none;
+}
+
+.messagelogger-embed-title a:hover {
+    text-decoration: underline;
+}
+
+.messagelogger-embed-description {
+    font-size: 13px;
+    line-height: 1.375;
+    margin-bottom: 4px;
+    color: var(--text-normal);
+}
+
+.messagelogger-embed-image {
+    max-width: 400px;
+    max-height: 300px;
+    border-radius: 4px;
+    margin-top: 4px;
+}
+
+.messagelogger-embed-thumbnail {
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 4px;
+    float: right;
+    margin-left: 8px;
+}
+
+.messagelogger-message-id {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 9px;
+    color: var(--text-muted);
+    background: var(--messagelogger-secondary);
+    padding: 2px 6px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.messagelogger-message:hover .messagelogger-message-id {
+    opacity: 1;
+}
+
+/* Deleted message styling in chat */
+.messagelogger-deleted {
+    opacity: 0.6;
+    position: relative;
+}
+
+.messagelogger-deleted-message {
+    background-color: rgba(240, 71, 71, 0.1);
+    border-left: 3px solid #f04747;
+    padding-left: 8px;
+    margin-left: -8px;
+}
+
+.messagelogger-deleted-message::before {
+    content: "[DELETED]";
+    color: #f04747;
+    font-weight: 600;
+    font-size: 0.75rem;
+    margin-right: 6px;
+    background-color: rgba(240, 71, 71, 0.2);
+    padding: 2px 6px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.messagelogger-deleted .messagelogger-deleted-no-content {
+    font-style: italic;
+    color: var(--text-muted);
+}
+
+
+
+/* Hover effect for deleted messages */
+.messagelogger-deleted-message:hover {
+    background-color: rgba(240, 71, 71, 0.15);
+}
+
+/* Dark theme adjustments */
+[data-theme="dark"] .messagelogger-deleted-message {
+    background-color: rgba(240, 71, 71, 0.08);
+}
+
+[data-theme="dark"] .messagelogger-deleted-message:hover {
+    background-color: rgba(240, 71, 71, 0.12);
+}
+
+/* Message status indicators */
+.messagelogger-status {
+    margin-left: 8px;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.75rem;
+}
+
+.messagelogger-status-deleted {
+    color: #f04747;
+    background-color: rgba(240, 71, 71, 0.2);
+}
+
+.messagelogger-status-edited {
+    color: #faa61a;
+    background-color: rgba(250, 166, 26, 0.2);
+}
+
+.messagelogger-status-time {
+    margin-left: 4px;
+    font-weight: normal;
+    opacity: 0.8;
+}
+
+/* Deleted message styling in modal */
+.messagelogger-message-deleted {
+    opacity: 0.8;
+    border-left: 3px solid #f04747;
+    padding-left: 8px;
+    margin-left: -8px;
+    background-color: rgba(240, 71, 71, 0.05);
+}
+
+.messagelogger-message-deleted .messagelogger-text {
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.messagelogger-message-deleted .messagelogger-author {
+    opacity: 0.8;
+}
+
+/* Dark theme adjustments for modal */
+[data-theme="dark"] .messagelogger-message-deleted {
+    background-color: rgba(240, 71, 71, 0.03);
+}
+
+/* Button styles */
+.messagelogger-button-export {
+    background: var(--button-secondary-background);
+    color: var(--text-normal);
+}
+
+.messagelogger-button-export:hover {
+    background: var(--button-secondary-background-hover);
+}
+
+.messagelogger-button-clear {
+    background: var(--button-danger-background);
+    color: var(--white-500);
+}
+
+.messagelogger-button-clear:hover {
+    background: var(--button-danger-background-hover);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .messagelogger-search-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .messagelogger-actions {
+        flex-direction: column;
+    }
+    
+    .messagelogger-message-header {
+        gap: 8px;
+    }
+    
+    .messagelogger-avatar {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .messagelogger-image {
+        max-width: 250px;
+        max-height: 150px;
+    }
+}
+
+/* Dark theme adjustments */
+.theme-dark .messagelogger-message {
+    background: var(--background-secondary);
+}
+
+.theme-dark .messagelogger-message:hover {
+    background: var(--background-secondary-alt);
+}
+
+/* Light theme adjustments */
+.theme-light .messagelogger-message {
+    background: var(--background-primary);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.theme-light .messagelogger-message:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
